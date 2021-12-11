@@ -129,7 +129,7 @@ const Title = styled.h1 `
 
           ${tablet (
                     {
-                              fontSize: "50px",
+                              fontSize: "40px",
                     }
           ) }
 

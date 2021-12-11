@@ -4,7 +4,7 @@ import { categories } from "../data"
 
 import CategoryItem from "./CategoryItem"
 
-import { mobile, laptop } from "../responsive"
+import { mobile, laptop, tablet } from "../responsive"
 
 
 const Container = styled.div `
@@ -15,6 +15,14 @@ const Container = styled.div `
           ${mobile(
                     {
                               padding: "0px",
+
+                              flexDirection: "column"
+                    }
+          )}
+
+          ${tablet (
+                    {
+                              // padding: "0px",
 
                               flexDirection: "column"
                     }

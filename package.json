@@ -4,14 +4,15 @@
   "description": "e-commerce",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "npm start --prefix client",
+    "server": "node index.js",
+    "dev": "concurrently \"npm run server\" \"npm start\"",
     "heroku-postbuild": "cd client && npm install && npm run build"
-
   },
   "author": "HUGB",
   "license": "ISC",
   "dependencies": {
-    "api": "^4.1.0",
+    "concurrently": "^6.4.0",
     "cors": "^2.8.5",
     "crypto-js": "^4.1.1",
     "dotenv": "^10.0.0",
@@ -19,7 +20,6 @@
     "flutterwave-node-v3": "^1.0.9",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.12",
-    "nodemon": "^2.0.14",
-    "open": "^8.4.0"
+    "nodemon": "^2.0.14"
   }
 }

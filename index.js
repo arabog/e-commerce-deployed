@@ -12,6 +12,10 @@ const orderRoute = require("./routes/order")
 // const flutterRouter = require("./routes/flutter")
 
 
+// deployment
+const path = require("path")
+
+
 const cors = require("cors")
 
 dotenv.config()
